@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/avilavy/Desktop/ionicCam/platforms/ios/www/plugins/cordova-plugin-console/www/console-via-logger.js",
+        "/Users/avilavy/Desktop/ionicCam/www/js/controllers.js"
+    ]
+}

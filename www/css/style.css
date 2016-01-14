@@ -1,0 +1,32 @@
+/* Empty. Add your own CSS if you like */
+.custom-button{
+    font-size: 30px !important;
+    background: #ef473a !important;
+    border-radius: 50% !important;
+    color:white !important;
+}
+.custom-button-cam{
+    font-size: 100px !important;
+    background: #ef473a !important;
+    border-radius: 50% !important;
+    color:white !important;
+}
+
+.custom-button-mail{
+    font-size: 100px !important;
+    background: #00BFFF !important;
+    border-radius: 50% !important;
+    color:white !important;
+}
+
+.my-icon:before,
+.my-icon{
+  font-size:30px !important;
+
+}
+
+.my-icon-big:before,
+.my-icon-big{
+  font-size:80px !important;
+
+}

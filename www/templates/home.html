@@ -1,0 +1,52 @@
+<ion-view title="Photo App">
+
+	<ion-content class="padding">
+    <span class="left-buttons" ng-show="showsCamSmall">
+        <button class="button custom-button-cam" ng-click="getPhoto()">
+            <i class="icon ion-camera my-icon"></i>
+        </button>
+    </span>
+    <span class="right-buttons" style="float:right" ng-show="showsEmailSmall">
+        <button class="button custom-button-mail" ng-click="sendEmail()">
+            <i class="icon ion-email my-icon"></i>
+        </button>
+    </span>
+		<br><br>
+		<center><div type="text" id="currentPosition"/></div></center>
+		<br><br>
+
+		<center>
+		<div class="row" ng-show="showsCamBig">
+    <div class="col">
+        <button class="button button-block custom-button" ng-click="getPhoto()" style="width:300px; height:300px;">
+            <i class="icon ion-camera my-icon-big"></i>
+        </button>
+    </div>
+    </div>
+		</center>
+
+		<!--
+		<button class="button button-block custom-button" ng-click="getPhoto()">
+        <i class="icon ion-camera my-icon"></i>
+    </button>
+
+
+		<button class="button button-block button-balanced" ng-click="selImages()" ng-disabled="!ready">
+			Select Images
+		</button>
+		-->
+		<center>
+		<ion-scroll direction="x" style="height:400px; min-height: 400px; overflow: scroll; white-space: nowrap;">
+			<img ng-repeat="img in images" ng-src="{{img}}" style="height:400px; padding: 10px 10px 10px 10px;"/>
+		</ion-scroll>
+		</center>
+		<!--
+		<p ng-repeat="img in images">
+			<img ng-src="{{img}}" style="max-width: 50%"/>
+		</p>
+		-->
+
+
+	</ion-content>
+
+</ion-view>
